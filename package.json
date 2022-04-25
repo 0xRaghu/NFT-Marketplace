@@ -1,0 +1,25 @@
+{
+  "name": "velasart-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.3",
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "openzeppelin-test-helpers": "^0.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "truffle-contract-size": "^2.0.1",
+    "truffle-flattener": "^1.6.0"
+  },
+  "scripts": {
+    "prettier": "npx prettier --write 'contracts/**/*.sol'",
+    "contract-size": "truffle run contract-size",
+    "compile": "truffle compile --all",
+    "test": "truffle test"
+  }
+}
